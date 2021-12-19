@@ -1,13 +1,20 @@
 body {
-    background: #1F2937;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container, .hero-container {
+    background: #1F2937;
 }
 
 nav {
     width: 90%;
     max-width: 1000px;
-    margin: 8px auto;
+    margin: 0 auto;
+    padding: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +49,8 @@ nav li {
 .hero {
     width: 90%;
     max-width: 1000px;
-    margin: 96px auto;
+    margin: 0 auto;
+    padding: 96px 0;
     display: flex;
 }
 
@@ -50,6 +58,7 @@ nav li {
     color: #F9FAF8;
     font-size: 48px;
     font-weight: bolder;
+    margin: 0;
 }
 
 .hero-secondary-text {
@@ -62,6 +71,54 @@ nav li {
     color: #F9FAF8;
     font: inherit;
     border: none;
-    padding: .25em 1em;
+    padding: .5em 1.5em;
     border-radius: 5px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote-container {
+    flex: 1;
+    width: 100%;
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    width: 80%;
+    max-width: 800px;
+    margin: 0;
+}
+
+.quote blockquote {
+    color: #1F2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    margin: 0;
+    text-align: justify;
+}
+
+.quote figcaption {
+    margin: 0;
+    text-align: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer {
+    background: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E5E7EB;
+    font-size: 18px;
+    height: 64px;
 }
